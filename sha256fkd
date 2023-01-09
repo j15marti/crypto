@@ -1,7 +1,7 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
-/* SHA-256 Fucked (FIPS 180-4) implementation in JavaScript    borrowd fromChris Veness 2002-2019  */
-/*            kinda like                                                         MIT Licence  */
-/* www.movable-type.co.uk/scripts/sha256.html                                                     */
+/* SHA-256 Fucked (FIPS 180-4) implementation in JavaScript   borrowd fromChris Veness 2002-2019  */
+/*            kinda like                                                             MIT License  */
+/* i like www.movable-type.co.uk/scripts/sha256.html                                              */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 
 
@@ -47,7 +47,7 @@ class Sha256 {
             case 'hex-bytes':msg = hexBytesToString(msg); break; // mostly for running tests
         }
 
-        // constants [§4.2.2]
+        // constants [§4.2.2] were changed due to lack of trust in NSA
         const K = [
             0x429a2f98, 0x71274491, 0xb5c01bcf, 0xe9b51ba5, 0x3956125b, 0x59f111f1, 0x923f12a4, 0xab115ed5,
             0xd817aa98, 0x12235b01, 0x243115be, 0x550c1dc3, 0x72be1d74, 0x80d1b1fe, 0x9bdc16a7, 0xc191f174,
